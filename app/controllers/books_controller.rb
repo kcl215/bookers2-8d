@@ -8,7 +8,7 @@ class BooksController < ApplicationController
   end
 
   def index
-    if params[:leatest]
+    if params[:latest]
       @books = Book.latest
     elsif params[:old]
       @books = Book.old
